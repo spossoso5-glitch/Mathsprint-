@@ -1,0 +1,838 @@
+const lessonData = {
+
+  "Integers, decimals and negatives": {
+    explanation:
+      "Integers are whole numbers, including negative numbers and zero. Decimals are numbers with a decimal point. A number line helps you compare positive and negative values.",
+
+    rules: [
+      "Adding a negative moves left on a number line.",
+      "Subtracting a negative is the same as adding.",
+      "Keep decimal points lined up when adding or subtracting."
+    ],
+
+    examples: [
+      {
+        question: "-7 + 12",
+        working: "Start at -7 and move 12 places to the right. The answer is 5."
+      },
+      {
+        question: "18 - (-6)",
+        working: "Subtracting a negative becomes addition: 18 + 6 = 24."
+      },
+      {
+        question: "4.7 + 2.35",
+        working: "Write 4.70 + 2.35 = 7.05."
+      }
+    ],
+
+    mistakes: [
+      "Forgetting that subtracting a negative becomes addition.",
+      "Putting decimal points in the wrong place."
+    ],
+
+    questions: [
+      ["-9 + 15", "6"],
+      ["12 - (-8)", "20"],
+      ["4.2 + 1.8", "6"],
+      ["7.5 - 2.3", "5.2"],
+      ["-4 - 6", "-10"]
+    ]
+  },
+
+
+  "Factors, multiples and primes": {
+    explanation:
+      "A factor divides exactly into a number. A multiple is made by multiplying a number by an integer. A prime number has exactly two positive factors: 1 and itself.",
+
+    rules: [
+      "Factors divide into a number exactly.",
+      "Multiples are found by multiplying.",
+      "A prime number has exactly two positive factors."
+    ],
+
+    examples: [
+      {
+        question: "List the factors of 12",
+        working: "The pairs are 1×12, 2×6 and 3×4. So the factors are 1, 2, 3, 4, 6 and 12."
+      },
+      {
+        question: "Is 29 prime?",
+        working: "29 is only divisible by 1 and 29, so it is prime."
+      },
+      {
+        question: "Find the first four multiples of 7",
+        working: "7×1=7, 7×2=14, 7×3=21, 7×4=28."
+      }
+    ],
+
+    mistakes: [
+      "Thinking 1 is a prime number.",
+      "Confusing factors with multiples."
+    ],
+
+    questions: [
+      ["Is 31 prime?", "yes"],
+      ["Smallest factor of every positive integer", "1"],
+      ["First three multiples of 9", "9, 18, 27"],
+      ["Number of factors of 8", "4"],
+      ["Is 21 prime?", "no"]
+    ]
+  },
+
+
+  "HCF and LCM": {
+    explanation:
+      "The HCF is the highest common factor shared by numbers. The LCM is the lowest positive number that is a multiple of all the numbers.",
+
+    rules: [
+      "HCF means highest common factor.",
+      "LCM means lowest common multiple.",
+      "Prime factorisation is useful for larger numbers."
+    ],
+
+    examples: [
+      {
+        question: "HCF of 18 and 24",
+        working: "Factors of 18 include 1,2,3,6,9,18. Factors of 24 include 1,2,3,4,6,8,12,24. Highest shared factor = 6."
+      },
+      {
+        question: "LCM of 6 and 8",
+        working: "Multiples of 6: 6,12,18,24. Multiples of 8: 8,16,24. First common multiple = 24."
+      },
+      {
+        question: "Two lights flash every 12 and 18 seconds. When together again?",
+        working: "Find LCM(12,18). The answer is 36, so they flash together again after 36 seconds."
+      }
+    ],
+
+    mistakes: [
+      "Mixing up HCF and LCM.",
+      "Choosing a common factor that is not the highest one."
+    ],
+
+    questions: [
+      ["HCF of 20 and 30", "10"],
+      ["HCF of 16 and 24", "8"],
+      ["LCM of 6 and 9", "18"],
+      ["LCM of 8 and 12", "24"],
+      ["HCF of 27 and 36", "9"]
+    ]
+  },
+
+
+  "Powers and roots": {
+    explanation:
+      "Powers show repeated multiplication. A square root reverses squaring. For example, 5² means 5×5 and √25 = 5.",
+
+    rules: [
+      "2³ means 2×2×2.",
+      "a^m × a^n = a^(m+n).",
+      "a^m ÷ a^n = a^(m-n).",
+      "A square root undoes a square."
+    ],
+
+    examples: [
+      {
+        question: "2³",
+        working: "2×2×2 = 8."
+      },
+      {
+        question: "3² × 3³",
+        working: "Same base, so add the powers: 3⁵ = 243."
+      },
+      {
+        question: "√144",
+        working: "12×12 = 144, so √144 = 12."
+      }
+    ],
+
+    mistakes: [
+      "Multiplying the powers when multiplying the same base.",
+      "Forgetting what a square root means."
+    ],
+
+    questions: [
+      ["2⁵", "32"],
+      ["10³", "1000"],
+      ["√81", "9"],
+      ["3² × 3³", "243"],
+      ["7⁴ ÷ 7²", "49"]
+    ]
+  },
+
+
+  "Fractions": {
+    explanation:
+      "Fractions show parts of a whole. For addition and subtraction, use a common denominator. For multiplication, multiply across. For division, multiply by the reciprocal.",
+
+    rules: [
+      "Use a common denominator for addition and subtraction.",
+      "Multiply numerator by numerator and denominator by denominator.",
+      "To divide by a fraction, flip the second fraction and multiply."
+    ],
+
+    examples: [
+      {
+        question: "1/3 + 1/6",
+        working: "1/3 = 2/6, so 2/6 + 1/6 = 3/6 = 1/2."
+      },
+      {
+        question: "3/5 × 10/9",
+        working: "Multiply: 30/45. Simplify by dividing by 15: 2/3."
+      },
+      {
+        question: "2/3 ÷ 4/5",
+        working: "Flip 4/5 to 5/4. Then 2/3 × 5/4 = 10/12 = 5/6."
+      }
+    ],
+
+    mistakes: [
+      "Adding the denominators when adding fractions.",
+      "Forgetting to flip the second fraction when dividing."
+    ],
+
+    questions: [
+      ["1/4 + 3/4", "1"],
+      ["5/6 - 1/3", "1/2"],
+      ["2/7 × 14/3", "4/3"],
+      ["3/8 ÷ 3/4", "1/2"],
+      ["7/10 as a decimal", "0.7"]
+    ]
+  },
+
+
+  "Percentage change": {
+    explanation:
+      "Percentage change tells you how much a value increases or decreases compared with its original amount.",
+
+    rules: [
+      "Increase by p% → multiply by 1 + p/100.",
+      "Decrease by p% → multiply by 1 - p/100.",
+      "Percentage change = change ÷ original × 100%."
+    ],
+
+    examples: [
+      {
+        question: "Increase £80 by 15%",
+        working: "Multiplier = 1.15. 80×1.15 = £92."
+      },
+      {
+        question: "Decrease 240 by 25%",
+        working: "Multiplier = 0.75. 240×0.75 = 180."
+      },
+      {
+        question: "£50 becomes £62. Find the percentage increase.",
+        working: "Change = £12. 12÷50×100 = 24%."
+      }
+    ],
+
+    mistakes: [
+      "Using the final value instead of the original value.",
+      "Using 0.15 instead of 1.15 for a 15% increase."
+    ],
+
+    questions: [
+      ["Increase 200 by 10%", "220"],
+      ["Decrease 500 by 30%", "350"],
+      ["Increase 80 by 25%", "100"],
+      ["90 to 108: percentage increase", "20%"],
+      ["150 to 120: percentage decrease", "20%"]
+    ]
+  },
+
+
+  "Linear equations": {
+    explanation:
+      "A linear equation can be solved by using inverse operations to get the unknown by itself. You must do the same thing to both sides.",
+
+    rules: [
+      "Use inverse operations.",
+      "Do the same operation to both sides.",
+      "Substitute your answer back to check it."
+    ],
+
+    examples: [
+      {
+        question: "x + 7 = 15",
+        working: "Subtract 7 from both sides: x = 8."
+      },
+      {
+        question: "3x = 21",
+        working: "Divide both sides by 3: x = 7."
+      },
+      {
+        question: "5x - 4 = 16",
+        working: "Add 4: 5x = 20. Divide by 5: x = 4."
+      }
+    ],
+
+    mistakes: [
+      "Only changing one side of the equation.",
+      "Making sign errors."
+    ],
+
+    questions: [
+      ["x + 9 = 14", "5"],
+      ["2x = 18", "9"],
+      ["4x + 3 = 19", "4"],
+      ["7x - 8 = 27", "5"],
+      ["3x + 11 = 20", "3"]
+    ]
+  },
+
+
+  "Pythagoras": {
+    explanation:
+      "Pythagoras' theorem works with right-angled triangles. It says a² + b² = c², where c is the hypotenuse.",
+
+    rules: [
+      "Only use it for right-angled triangles.",
+      "The hypotenuse is opposite the right angle.",
+      "Add squares for the hypotenuse; subtract squares for a shorter side."
+    ],
+
+    examples: [
+      {
+        question: "Sides 3 and 4. Find the hypotenuse.",
+        working: "c² = 3² + 4² = 9 + 16 = 25, so c = 5."
+      },
+      {
+        question: "Hypotenuse 13 and one side 5.",
+        working: "Missing side² = 13² - 5² = 169 - 25 = 144, so the missing side = 12."
+      },
+      {
+        question: "Sides 6 and 8. Find the hypotenuse.",
+        working: "c = √(6² + 8²) = √100 = 10."
+      }
+    ],
+
+    mistakes: [
+      "Using the wrong side as the hypotenuse.",
+      "Adding squares when finding a shorter side."
+    ],
+
+    questions: [
+      ["Legs 5 and 12", "13"],
+      ["Hypotenuse 10 and leg 6", "8"],
+      ["Legs 8 and 15", "17"],
+      ["Hypotenuse 25 and leg 7", "24"],
+      ["Legs 9 and 12", "15"]
+    ]
+  },
+
+
+  "Mean, median, mode and range": {
+    explanation:
+      "These are ways of describing a set of data. Mean is total ÷ number of values. Median is the middle value. Mode is the most common value. Range is largest − smallest.",
+
+    rules: [
+      "Sort the data before finding the median.",
+      "Range = largest − smallest.",
+      "Mode is the value that occurs most often."
+    ],
+
+    examples: [
+      {
+        question: "2, 4, 6, 8, 10",
+        working: "Mean = 30÷5 = 6. Median = 6. No mode. Range = 10−2 = 8."
+      },
+      {
+        question: "1, 2, 2, 5, 9",
+        working: "Mean = 19÷5 = 3.8. Median = 2. Mode = 2. Range = 8."
+      },
+      {
+        question: "3, 3, 4, 4, 9",
+        working: "3 and 4 both appear twice, so there are two modes: 3 and 4."
+      }
+    ],
+
+    mistakes: [
+      "Finding the median before sorting.",
+      "Dividing the total by the wrong number of values."
+    ],
+
+    questions: [
+      ["Mean of 2,4,6", "4"],
+      ["Median of 1,7,3", "3"],
+      ["Mode of 2,2,3,4", "2"],
+      ["Range of 5,11,14", "9"],
+      ["Mean of 10,20,30,40", "25"]
+    ]
+  }
+
+};
+
+
+function getLessonData(topic) {
+
+  if (lessonData[topic]) {
+    return lessonData[topic];
+  }
+
+  return {
+    explanation:
+      `${topic} will have a full lesson here. Start by identifying what the question is asking and matching it to the correct mathematical method.`,
+
+    rules: [
+      "Read the question carefully.",
+      "Choose the correct method.",
+      "Show your working and check your answer."
+    ],
+
+    examples: [
+      {
+        question: "Starter example",
+        working: "Identify the information given, choose the correct rule, then work through the calculation step by step."
+      },
+      {
+        question: "Exam-style example",
+        working: "Underline the important information, write down your method and check the final answer."
+      },
+      {
+        question: "Challenge example",
+        working: "Break the problem into smaller steps and check each step as you go."
+      }
+    ],
+
+    mistakes: [
+      "Using a method without checking that it fits the question.",
+      "Skipping working and losing track of the calculation."
+    ],
+
+    questions: [
+      ["Practice question 1", "See lesson explanation"],
+      ["Practice question 2", "See lesson explanation"],
+      ["Practice question 3", "See lesson explanation"],
+      ["Practice question 4", "See lesson explanation"],
+      ["Practice question 5", "See lesson explanation"]
+    ]
+  };
+}
+
+
+function openTopic(topic) {
+
+  const lesson = getLessonData(topic);
+  const done = completed.includes(topic);
+
+  const examplesHTML = lesson.examples.map((example, i) => `
+    <div class="example">
+      <h3>Example ${i + 1}</h3>
+
+      <p>
+        <strong>Question:</strong>
+        ${example.question}
+      </p>
+
+      <br>
+
+      <p>
+        <strong>Step-by-step:</strong>
+        ${example.working}
+      </p>
+    </div>
+  `).join("");
+
+
+  const questionsHTML = lesson.questions.map((q, i) => `
+    <div class="question">
+
+      <strong>
+        ${i + 1}. ${q[0]}
+      </strong>
+
+      <br>
+
+      <input
+        id="lessonAnswer${i}"
+        class="answer-input"
+        placeholder="Type your answer"
+      >
+
+      <div
+        id="lessonCorrect${i}"
+        class="answer"
+      >
+        Correct answer: ${q[1]}
+      </div>
+
+    </div>
+  `).join("");
+
+
+  document.getElementById("app").innerHTML = `
+
+    <div class="hero">
+
+      <span class="badge">
+        ${getSection(topic)}
+      </span>
+
+      <h1>
+        ${topic}
+      </h1>
+
+      <p>
+        ${done
+          ? "✅ You completed this topic. Review it whenever you want."
+          : "📖 Learn the topic, study the examples, then test yourself."
+        }
+      </p>
+
+      <div class="actions">
+
+        <button
+          class="secondary"
+          onclick="showTopics()"
+        >
+          ← Back to topics
+        </button>
+
+        <button
+          class="secondary"
+          onclick='toggleFavourite(${JSON.stringify(topic)})'
+        >
+          ${
+            favourites.includes(topic)
+              ? "⭐ Saved"
+              : "☆ Favourite"
+          }
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="card">
+
+      <h2>
+        📖 What is ${topic}?
+      </h2>
+
+      <br>
+
+      <p class="small">
+        ${lesson.explanation}
+      </p>
+
+    </div>
+
+
+    <br>
+
+
+    <div class="card">
+
+      <h2>
+        🧠 Key rules
+      </h2>
+
+      <br>
+
+      <ul style="padding-left:20px;">
+
+        ${lesson.rules.map(rule => `
+          <li>
+            ${rule}
+          </li>
+        `).join("")}
+
+      </ul>
+
+    </div>
+
+
+    <br>
+
+
+    <div class="card">
+
+      <h2>
+        👀 3 worked examples
+      </h2>
+
+      ${examplesHTML}
+
+    </div>
+
+
+    <br>
+
+
+    <div class="card">
+
+      <h2>
+        ⚠️ Common mistakes
+      </h2>
+
+      <br>
+
+      <ul style="padding-left:20px;">
+
+        ${lesson.mistakes.map(mistake => `
+          <li>
+            ${mistake}
+          </li>
+        `).join("")}
+
+      </ul>
+
+    </div>
+
+
+    <br>
+
+
+    <div class="card">
+
+      <h2>
+        ✏️ 5 practice questions
+      </h2>
+
+      <br>
+
+      ${questionsHTML}
+
+      <button
+        class="primary"
+        onclick='checkLesson(${JSON.stringify(topic)})'
+      >
+        Check answers
+      </button>
+
+      <div id="lessonScore"></div>
+
+    </div>
+
+
+    <br>
+
+
+    <div class="card ai-box">
+
+      <h2>
+        🤖 MathSprint Tutor
+      </h2>
+
+      <p class="small">
+        Stuck? Tell the tutor what you don't understand.
+      </p>
+
+      <br>
+
+      <textarea
+        id="tutorQuestion"
+        placeholder="Example: Why did I divide here?"
+      ></textarea>
+
+      <br><br>
+
+      <button
+        class="primary"
+        onclick='tutorHelp(${JSON.stringify(topic)})'
+      >
+        Help me
+      </button>
+
+      <div id="tutorReply"></div>
+
+    </div>
+
+
+    <br>
+
+
+    <button
+      class="primary"
+      onclick='completeTopic(${JSON.stringify(topic)})'
+    >
+      ${
+        done
+          ? "✅ Topic completed"
+          : "Mark topic as complete"
+      }
+    </button>
+
+  `;
+
+}
+
+
+function checkLesson(topic) {
+
+  const lesson = getLessonData(topic);
+
+  let score = 0;
+
+
+  lesson.questions.forEach((q, i) => {
+
+    const input =
+      document.getElementById(
+        `lessonAnswer${i}`
+      );
+
+    const answer =
+      document.getElementById(
+        `lessonCorrect${i}`
+      );
+
+
+    const user =
+      input.value
+        .trim()
+        .toLowerCase();
+
+
+    const correct =
+      String(q[1])
+        .trim()
+        .toLowerCase();
+
+
+    if (user === correct) {
+
+      score++;
+
+    }
+
+
+    answer.style.display = "block";
+
+  });
+
+
+  if (
+    score === lesson.questions.length &&
+    !completed.includes(topic)
+  ) {
+
+    completed.push(topic);
+
+    saveData();
+
+  }
+
+
+  document.getElementById(
+    "lessonScore"
+  ).innerHTML = `
+
+    <div class="card" style="margin-top:15px">
+
+      <h3>
+        Score: ${score}/${lesson.questions.length}
+      </h3>
+
+      <p class="small">
+
+        ${
+          score === 5
+            ? "🔥 Perfect! You smashed it."
+            : score >= 3
+            ? "👍 Good work. Review the examples and try again."
+            : "📚 Go back through the explanation and examples."
+        }
+
+      </p>
+
+    </div>
+
+  `;
+
+}
+
+
+function completeTopic(topic) {
+
+  if (!completed.includes(topic)) {
+
+    completed.push(topic);
+
+    saveData();
+
+  }
+
+  openTopic(topic);
+
+}
+
+
+function tutorHelp(topic) {
+
+  const userQuestion =
+    document
+      .getElementById("tutorQuestion")
+      .value
+      .trim();
+
+
+  const lesson =
+    getLessonData(topic);
+
+
+  const reply =
+    userQuestion
+
+    ? `
+      Let's slow it down.
+
+      <br><br>
+
+      First remember:
+
+      <strong>
+        ${lesson.rules[0]}
+      </strong>
+
+      <br><br>
+
+      Now look at Example 1.
+      Don't worry about the final answer yet.
+      Try to identify the first step the example takes.
+
+      <br><br>
+
+      You said:
+      "${userQuestion}"
+    `
+
+    : `
+      Here's a hint:
+
+      <br><br>
+
+      <strong>
+        ${lesson.rules[0]}
+      </strong>
+
+      <br><br>
+
+      Start with Example 1 and try to copy
+      the method rather than the numbers.
+    `;
+
+
+  document.getElementById(
+    "tutorReply"
+  ).innerHTML = `
+
+    <div class="card" style="margin-top:15px">
+
+      🤖 <strong>MathSprint Tutor</strong>
+
+      <p
+        class="small"
+        style="margin-top:10px"
+      >
+        ${reply}
+      </p>
+
+    </div>
+
+  `;
+
+}
+
+showHome();
